@@ -1,12 +1,12 @@
-import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
-import StatusUpdateScreen from "./screens/StatusUpdateScreen";
-import PhotoUploadScreen from "./screens/PhotoUploadScreen";
-import TransactionManagementScreen from "./screens/TransactionManagementScreen";
-import LoginScreen from "./screens/LoginScreen";
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import React from 'react'
+import LoginScreen from './screens/LoginScreen'
+import PhotoUploadScreen from './screens/PhotoUploadScreen'
+import StatusUpdateScreen from './screens/StatusUpdateScreen'
+import TransactionManagementScreen from './screens/TransactionManagementScreen'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Stack.Screen name="Status Update" component={StatusUpdateScreen} />
         <Stack.Screen name="Upload Photos" component={PhotoUploadScreen} />
         <Stack.Screen
-          name="Transation Management"
+          name="Transaction Management"
           component={TransactionManagementScreen}
         />
         <Stack.Screen
@@ -25,7 +25,7 @@ function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
-  );
+  )
 }
 
-export default App;
+export default App

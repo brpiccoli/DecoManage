@@ -9,7 +9,7 @@ export declare type ImageInfo = {
     width: number;
     height: number;
     type?: 'image' | 'video';
-    exif?: {
+    exit?: {
         [key: string]: any;
     };
     base64?: string;
