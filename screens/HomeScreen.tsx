@@ -14,7 +14,7 @@ export default function HomeScreen({ navigation }: any) {
       />
       <Button
         title="Manage Transactions"
-        onPress={() => navigation.navigate('Manage Transactions')}
+        onPress={() => navigation.navigate('Transaction Management')}
       />
     </View>
   )

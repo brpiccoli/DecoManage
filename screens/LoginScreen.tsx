@@ -1,6 +1,5 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
-import 'firebase/compat/firestore'
 import React, { useState } from 'react'
 import { Alert, Button, StyleSheet, TextInput, View } from 'react-native'
 
@@ -13,7 +12,7 @@ export default function LoginScreen() {
       await firebase.auth().signInWithEmailAndPassword(email, password)
       Alert.alert('Login Successful')
     } catch (error) {
-      Alert.alert('Error:', 'error')
+      Alert.alert('Error')
     }
   }
 
